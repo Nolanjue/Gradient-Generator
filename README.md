@@ -19,3 +19,5 @@ A very educating project in css manipulation and some cool concepts with JS and 
 # Current edits I have in mind/will execute:
 
 -The current direction is set to "to bottom", I think for better usability, I should set a null value for currentDirection and then add a boolean for the scenario:  "The user generates the gradient without selecting a button' and return an alert and return "", to close out of function.
+
+-I need to edit the css to allow better design for mobile and other devices with different viewport dimensions.
