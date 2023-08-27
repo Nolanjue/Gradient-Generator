@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+*, *::before, *::after{     
+/*before= before actions are done to the palette*/
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    border:none;
+    outline:none
+
+}
+
+
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.container{
+    background-color:white;
+    width:400px;
+    padding:50px 30px;
+    gap:10px;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container *:not(i){ 
+    /*CSS rule that targets all elements 
+     an element with the class .container except <i>*/
+     font-family: 'Rubik', sans-serif;
+
+}
+
+.colors {
+    width:100%;
+    display:flex;
+    gap:50px;    
+    justify-content:center;
+}
+
+input[type = 'color'] {
+/*another way of specifying */
+    appearance:none;
+    -webkit-appearance:none;
+    background-color:transparent;
+    width:100px;
+    height:45px;
+    cursor:pointer;
+    
+}
+
+input[type = 'color']::-webkit-color-swatch{
+    /*allows a selection of colors for the  input */
+    border-radius:20px;
+    border:none;
+}
+
+.buttons{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:20px;/*remember, gap size can hurt
+                the appearance as all elements may change to fit in container */
+    margin:30px 0;
+}
+
+.buttons > button {
+    cursor:pointer;
+    height:35px;
+    width:35px;
+    background:transparent;
+    border:2px solid #d5d5dc;
+    border-radius:5px;
+}
+
+.rotate-icon > i {
+    transform:rotate(45deg);/*to the right*/
+}
+.buttons > .active {/*targets the specific .active in .buttons div */
+    border:none;/*its good practice to have a .active on a button to see style*/
+    background-color: #4a6ee0;
+    color:#fff
+}
+
+#submit{ /*call a element by id using #*/
+    display:block;
+    background-color:#4a6ee0;
+    color:#fff;
+    font-size:16px;
+    margin:0 auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    cursor:pointer;
+}
+
+.output{
+    background-color:#f0f2fc;
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+#code{
+    width:100%;
+    resize:none;
+    color: #30304a;
+    padding: 10px 20px;
+    background-color:transparent;
+    border:2px solid black;
+    font-size:12px;
+}
+
+#copy{
+    background-color:#4a6ee0;
+    color:#fff;
+    font-size:12px;
+    position:relative;
+    padding:3px 8px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+    .container{
+     width:300px;
+     height:400px;
+     gap:20px;
+    }
+}
