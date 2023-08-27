@@ -4,7 +4,7 @@ buttons with parameters instead of having to add more and more event listeners. 
 let colorOne = document.getElementById('color-a');
 let colorTwo = document.getElementById('color-b');
 
-let currentDirection = 'to bottom';
+let currentDirection = 'to bottom';//may change this, as default is set to 'to bottom' 
 let outputCode = document.getElementById('code');
 
 
